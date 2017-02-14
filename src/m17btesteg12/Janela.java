@@ -77,8 +77,9 @@ public class Janela extends javax.swing.JFrame {
        } else {
            labelPrimoSN.setText("não é primo");
        }
-       if( numero < 0){
+       if( numero <= 0){
            labelPrimoSN.setText("ERRO.");
+           campoNumero.setText("");
        }
        }catch(NumberFormatException e){
            labelPrimoSN.setText("ERRO.");
